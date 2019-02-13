@@ -70,7 +70,7 @@ def runner
   else 
     total = hit?(first_hit)
     until total >= 21
-      hit?(total)
+      total = hit?(total)
     end
   end_game(total)
   end 
